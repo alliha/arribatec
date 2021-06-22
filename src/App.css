@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,47 @@
   color: white;
 }
 
+.App-body{
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  padding-left: 2em;
+}
+
+.body-item{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#suggboximg{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+textarea{
+  width: 100%;
+  height: 100%;
+}
+
+input{
+  padding: 4px;
+  margin: 2px;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
